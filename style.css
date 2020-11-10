@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+}
+
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: transparent;
+  scrollbar-width: thin;
+  scroll-behavior: auto;
+}
+div {
+  display: block;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  display: block;
+  padding-right: 1.1em;
+  padding-left: 1.1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.subheadtext {
+  color: blue;
+  font-size: 1rem;
+  line-height: 1.5;
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 1.1em;
+  padding-left: 1.1em;
+}
+
+.headtext {
+  font-size: 2rem;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.text {
+  font-size: 1rem;
+  line-height: 1.5;
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 1.1em;
+  padding-left: 1.1em;
+}
+
+@media screen and (max-height: 600px) {
+  .headtext {
+    font-size: 1.8rem;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}

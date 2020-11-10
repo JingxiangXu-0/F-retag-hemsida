@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slidershow</title>
+  <!-- Css -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="slider.css">
+  <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="aos.css">
+
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap" rel="stylesheet">
+  
+  <!-- Icons -->
+  <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+  <link rel="icon" href="Bilder/logo.2.png">
+</head>
+<body>
+
+<!-- header_area_start -->
+<header>
+  <div class="header-area">
+    <div id="sticky-header" class="main-header-area">
+       <div class="row">
+      <div class="navigation">
+        <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="overlay-content">
+            <a href="#"><i class="fas fa-home"></i> About</a>
+            <a href="#"><i class="fas fa-pizza-slice"></i> About</a>
+            <a href="#"><i class="fas fa-pizza-slice"></i> About</a>
+            <a href="#"><i class="fas fa-pizza-slice"></i> About</a>
+            <a href="#"><i class="fas fa-pizza-slice"></i> About</a>
+            <a href="#"><i class="fas fa-pizza-slice"></i> About</a>
+          </div>
+        </div>
+        <span class="openbtn" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+      </div>
+      <div class="logo">
+        <a href="index.html"> <img src="Bilder/logo.png" width="90em" alt="Bild på logon"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- header_area_end -->
+
+<!-- slider_area_start -->
+  <div class="slideshow-area">
+    <div class="slides">
+      <div class="slideroverlay">
+        <h1 class="headtext" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">Montana Resort</h1>
+        <p  class="headtext" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300">Moise, hjälp mig snälla.</p>
+        <div class="button">
+          <a class="landingbutton" href="index.html"><i class="fas fa-pizza-slice"></i>Book</a>
+        </div>
+      </div>
+
+      <input type="radio" name="radio-btn" id="radio1">
+      <input type="radio" name="radio-btn" id="radio2">
+      <input type="radio" name="radio-btn" id="radio3">
+      <input type="radio" name="radio-btn" id="radio4">
+
+      <div class="slide first">
+        <img src="Bilder/Hotell-Bild2.jpg" alt="Slidershow bild 1" style="width:100%">
+      </div>
+      <div class="slide">
+        <img src="Bilder/Slide-bild2.jpg" alt="Slidershow bild 2" style="width:100%">
+      </div>
+      <div class="slide">
+        <img src="Bilder/Hotell-Bild4.jpg" alt="Slidershow bild 3" style="width:100%">
+      </div>
+      <div class="slide">
+        <img src="Bilder/Food-bild1.jpg" alt="Slidershow bild 4" style="width:100%">
+      </div>
+
+      <div class="navigation-auto">
+        <div class="auto-btn1"></div>
+        <div class="auto-btn2"></div>
+        <div class="auto-btn3"></div>
+        <div class="auto-btn4"></div>
+      </div>
+
+    </div>
+
+
+    <div class="navigation-manual">
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>    
+      <label for="radio1" class="manual-btn"></label>
+      <label for="radio2" class="manual-btn"></label>
+      <label for="radio3" class="manual-btn"></label>
+      <label for="radio4" class="manual-btn"></label>
+    </div>
+ 
+
+    <p class="space"></p>
+  </div>
+<!-- slider_area_end -->
+
+<!-- about_area_start -->
+  <section class="about-area">
+
+    <p class="subheadtext" data-aos="fade-up" data-aos-duration="1250" data-aos-delay="100">About</p>
+
+    <h3 class="headtext" data-aos="fade-up-right" data-aos-duration="1500" data-aos-delay="200" >Lorem ipsum dolor sit amet, consectetur adipisicing elit.?</h3>
+ 
+    <p class="text" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor.Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. <br> at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet.</p>
+
+    <p class="space"></p>
+ </section>
+
+ <!-- Js-Scrips -->
+ <script src="sliderscript.js"></script>
+ <script src="aos.js"></script>
+ <script>
+  AOS.init();
+</script>
+<script>
+  function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+  }
+  
+  function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+  }
+  </script>
+
+</body>
+</html>
