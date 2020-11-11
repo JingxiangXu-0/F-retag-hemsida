@@ -166,9 +166,9 @@
   text-decoration: none;
   display: inline-block;
   font-size: 18px;
+  border-radius: 2px;
   margin: 30px;
   cursor: pointer;
-  border-radius: 12px;
   transition-duration: 0.5s;
   letter-spacing: 1px;
   font-weight: normal;
@@ -180,7 +180,7 @@
 }
 
 .landingbutton {
-  color: blue;
+  color: black;
 }
 
 .slideroverlay h1 {
@@ -200,16 +200,20 @@
 @media only screen and (max-width: 600px) {
   .slideroverlay h1 {
     top: 25%;
-    font-size: 2.5em;
+    font-size: 2.3em;
     text-align: center;
   }
 
   .slideroverlay p {
     top: 50%;
-    font-size: 20px;
+    font-size: 18px;
   }
   .button {
-    top: 57%;
+    top: 55%;
+  }
+
+  .space {
+    padding-top: 0vh;
   }
 }
 
@@ -227,12 +231,16 @@
   .button {
     top: 50%;
   }
+
+  /* .space {
+    padding-top: 0vh;
+  } */
 }
 
 @media only screen and (min-width: 768px) {
   .slideroverlay h1 {
-    top: 22%;
-    font-size: 5em;
+    top: 30%;
+    font-size: 4.5em;
   }
 
   .slideroverlay p {
@@ -240,7 +248,13 @@
     font-size: 2em;
   }
   .button {
-    top: 52%;
+    top: 50%;
     font-size: 2em;
   }
+  .slideshow-area {
+    height: 100vh;
+  }
+  /* .space {
+    padding-top: 100vh;
+  } */
 }
