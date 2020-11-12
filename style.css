@@ -43,8 +43,8 @@ p {
   position: relative;
   width: 100%;
   min-height: 1px;
-  padding-right: 5%;
-  padding-left: 5%;
+  padding-right: 2%;
+  padding-left: 2%;
 }
 
 .subheadtext {
@@ -61,8 +61,8 @@ p {
   width: 100%;
   font-size: 2rem;
   min-height: 1px;
-  padding-right: 5%;
-  padding-left: 5%;
+  padding-right: 2%;
+  padding-left: 2%;
 }
 
 .text {
@@ -71,8 +71,8 @@ p {
   position: relative;
   width: 100%;
   min-height: 1px;
-  padding-right: 5%;
-  padding-left: 5%;
+  padding-right: 2%;
+  padding-left: 2%;
 }
 
 @media screen and (max-height: 600px) {
@@ -86,13 +86,19 @@ p {
   .text {
     font-size: 32px;
     min-height: 0.5px;
+    padding-left: 3%;
+    padding-right: 3%;
   }
 
   .miniheadtext {
     font-size: 42px;
+    padding-left: 3%;
+    padding-right: 3%;
   }
   .headtext {
     font-size: 3rem;
     min-height: 2px;
+    padding-left: 3%;
+    padding-right: 3%;
   }
 }

@@ -239,22 +239,16 @@
 
 @media only screen and (min-width: 768px) {
   .slideroverlay h1 {
-    top: 30%;
-    font-size: 4.5em;
+    top: 25%;
+    font-size: 4em;
   }
 
   .slideroverlay p {
-    top: 42%;
-    font-size: 2em;
+    top: 42.5%;
+    font-size: 1.5em;
   }
   .button {
-    top: 50%;
-    font-size: 2em;
+    top: 55%;
+    font-size: 1.5em;
   }
-  .slideshow-area {
-    height: 100vh;
-  }
-  /* .space {
-    padding-top: 100vh;
-  } */
 }

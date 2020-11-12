@@ -50,25 +50,22 @@ header img {
   right: 0;
   top: 0;
   background-color: rgba(0, 0, 0, 0.9);
-  overflow-x: hidden;
+  overflow-y: hidden;
   transition: 0.4s;
 }
 
 .overlay-content {
   position: relative;
-  top: 20%;
-  width: 100%;
   text-align: center;
   margin-top: 1em;
 }
 
 .overlay a {
-  padding: 8px;
   text-decoration: none;
-  font-size: 36px;
   color: #818181;
   display: block;
   transition: 0.3s;
+  text-align: center;
 }
 
 .overlay a:hover {
@@ -142,16 +139,16 @@ header img {
   }
 
   .overlay-content {
-    top: 15%;
-    width: 100%;
-    margin-top: 2em;
+    top: 10%;
+    margin-top: 1em;
   }
 
   .overlay-content a {
-    padding-top: 1em;
+    padding-top: 24px;
   }
 
   .overlay .closebtn {
-    top: 1%;
+    top: 0.5;
+    right: 2%;
   }
 }
