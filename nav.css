@@ -1,5 +1,4 @@
 .header-area {
-  position: absolute;
   left: 0;
   right: 0;
   width: 100%;
@@ -7,9 +6,9 @@
   top: 0;
 }
 
-/* .main-header-area.sticky {
+.main-header-area {
   box-shadow: 0 3px 16px 0 rgba(0, 0, 0, 0.1);
-  position: fixed;
+  position: sticky;
   width: 100%;
   top: -70px;
   left: 3%;
@@ -21,7 +20,7 @@
   box-shadow: 0 3px 16px 0 rgba(0, 0, 0, 0.1);
   padding: 10px 150px;
   background: #000;
-} */
+}
 
 /* header img {
   display: flex;
@@ -36,7 +35,6 @@
 } */
 header img {
   padding-left: 15px;
-  position: absolute;
   padding-top: 0.6em;
   z-index: 2;
   top: 2%;
@@ -45,7 +43,6 @@ header img {
 .overlay {
   height: 100%;
   width: 0;
-  position: fixed;
   z-index: 30;
   right: 0;
   top: 0;
@@ -55,7 +52,6 @@ header img {
 }
 
 .overlay-content {
-  position: relative;
   text-align: center;
   margin-top: 1em;
 }
@@ -135,6 +131,25 @@ header img {
   header img {
     padding-left: 15px;
     padding-top: 0.6em;
+    top: 2%;
+  }
+
+  .overlay-content {
+    top: 10%;
+    margin-top: 1em;
+  }
+
+  .overlay-content a {
+    padding-top: 24px;
+  }
+
+  .overlay .closebtn {
+    top: 0.5;
+    right: 2%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  header img {
     top: 2%;
   }
 
