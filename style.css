@@ -80,6 +80,10 @@ p {
     font-size: 1.8rem;
     min-height: 1px;
   }
+  body {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
 }
 
 @media screen and (min-height: 786px) {
