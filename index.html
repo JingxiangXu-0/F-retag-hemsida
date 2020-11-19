@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home</title>
+  <title>Montana Resort</title>
 
   <!-- Css -->
   <link rel="stylesheet" href="style.css">
@@ -22,38 +22,50 @@
 <header>
   <div class="header-area">
     <div id="myheader" class="main-header-area">
-       <div class="row">
-      <div class="navigation">
+      <nav class="navigation">
         <div id="myNav" class="overlay">
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-          <div class="overlay-content">
-            <a href="#">Home</a>
-            <a href="#">Book</a>
-            <a href="#">Offers</a>
-            <a href="#">Gallery</a>
-            <a href="#">Information</a>
-            <a href="#">About</a>
-            <a href="#">Login</a>
-          </div>
+          <ul class="overlay-content">
+            <nav class="nav-item">
+              <a href="#">Home</a>
+            </nav>
+            <nav class="nav-item">
+              <a href="#">Book</a>
+            </nav>
+            <nav class="nav-item">
+              <a href="#">Offers</a>
+            </nav>
+            <nav class="nav-item">
+              <a href="#">Gallery</a>
+            </nav>
+            <nav class="nav-item">
+              <a href="#">Information</a>
+            </nav>
+            <nav class="nav-item">
+              <a href="#">About</a>
+            </nav>
+            <nav class="nav-item">
+              <a href="#">Login</a>
+            </nav>
+          </ul>
         </div>
         <span class="openbtn" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-      </div>
+      </nav>
       <div class="logo">
         <a href="index.html"> <img src="Bilder/logo.png" width="90em" alt="Bild på logon"></a>
         </div>
       </div>
     </div>
-  </div>
-</header>
+  </header>
 <!-- header_area_end -->
-
+<main>
 <!-- slider_area_start -->
   <div class="slideshow-area">
     <div class="slides">
       <div class="slideroverlay">
         <h1 class="gigaheadtext" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">Montana Resort</h1>
         <p  class="subheadtext" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300">Moise, hjälp mig snälla.</p>
-        <div class="button">
+        <div class="btn landing-btn">
           <a class="landingbutton" href="index.html">Book</a>
         </div>
       </div>
@@ -99,6 +111,76 @@
     <p class="space"></p>
   </div>
 <!-- slider_area_end -->
+
+<!-- Booking Start -->
+<!-- <section class="booking"> -->
+<div class="booking-container">
+  <form action="" class="form">
+    <div class="input-group">
+      <label for="destination" class="input-label">Destination</label>
+      <input type="text" class="intut" id="destination">
+    </div>    
+    <div class="input-group">
+      <label for="check-in" class="input-label">Check-in</label>
+      <input type="date" class="intut" id="check-in">
+    </div>    
+    <div class="input-group">
+      <label for="check-out" class="input-label">Check-out</label>
+      <input type="date" class="intut" id="check-out">
+    </div>    
+    <div class="input-group">
+      <label for="adults" class="input-label">Adults</label>
+      <select name="" id="adults" class="options">
+      <option value="0">0</option>
+      <option value="0">1</option>
+      <option value="0">2</option>
+      <option value="0">3</option>
+      <option value="0">4</option>
+    </select>
+    </div>    
+    <div class="input-group">
+      <label for="children" class="input-label">Children</label>
+      <select name="" id="children" class="options">
+      <option value="0">0</option>
+      <option value="0">1</option>
+      <option value="0">2</option>
+      <option value="0">3</option>
+      <option value="0">4</option>
+    </select>
+    </div>
+<button class="btn form-btn btn-purple">
+<span class="dots"><i class="fas fa-ellipsis-h"></i></span>
+</button>
+  </form>
+</div>
+</section>
+<!-- Booking end -->
+
+<!-- Hotels -->
+<section class="hotel">
+  <div class="container">
+    <h5 class="section-head">
+      <span class="heading">Explore</span>
+      <span class="sub-heading">Our Beautiful hotels</span>
+    </h5>
+    <div class="grid">
+      <div class="grid-item featured-hotels">
+        <img src="/Bilder/Hotell-Bild3.jpg" width="100%" alt="Hotel-img" class="hotel-img">
+        <h5 class="hotel-name">Name Hotel</h5>
+        <span class="hotel-price">From $79 425</span>
+        <div class="hotel-rating">
+          <i class="fas fa-star rating"></i>
+          <i class="fas fa-star rating"></i>
+          <i class="fas fa-star rating"></i>
+          <i class="fas fa-star rating"></i>
+          <i class="fas fa-star-half rating"></i>
+        </div>
+        <a href="#" class="btn"></a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Hotel end -->
 
 <!-- about_area_start -->
   <div class="about-area">
@@ -155,7 +237,8 @@
 
 </div>
 </footer>
-
+  
+</main>
  <!-- Js-Scrips -->
  <script src="sliderscript.js"></script>
  <script src="aos.js"></script>
@@ -164,6 +247,6 @@
  <script>
   AOS.init();
 </script>
-
+  
 </body>
 </html>

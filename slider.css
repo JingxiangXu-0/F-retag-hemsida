@@ -156,31 +156,6 @@
   background: black;
 } */
 
-/* Knapp */
-.button {
-  position: absolute;
-  top: 75%;
-  background-color: white;
-  padding: 12px 38px;
-  text-align: center;
-  display: inline-block;
-  border-radius: 8px;
-  cursor: pointer;
-  transition-duration: 0.4s;
-  font-weight: bold;
-  text-transform: uppercase;
-  z-index: 2;
-}
-
-.button:hover {
-  opacity: 0.65;
-}
-
-.landingbutton {
-  color: black;
-  font-size: 32px;
-}
-
 .slideroverlay h1 {
   font-family: "Raleway", sans-serif;
   position: absolute;
@@ -191,8 +166,15 @@
 
 .slideroverlay p {
   position: absolute;
-  top: 55%;
+  top: 40%;
   margin: 0;
+}
+
+.landing-btn {
+  padding: 12px 38px;
+  top: 60%;
+  color: black;
+  font-size: 24px;
 }
 
 @media only screen and (max-width: 600px) {
