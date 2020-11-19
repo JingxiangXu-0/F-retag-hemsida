@@ -142,12 +142,12 @@ header img {
   }
 
   .overlay-content {
-    top: 10%;
+    top: 5%;
     margin-top: 1em;
   }
 
   .overlay-content a {
-    padding-top: 24px;
+    padding-top: 12px;
   }
 
   .overlay .closebtn {
@@ -161,12 +161,12 @@ header img {
   }
 
   .overlay-content {
-    top: 10%;
+    top: 0;
     margin-top: 1em;
   }
 
   .overlay-content a {
-    padding-top: 30px;
+    padding-top: 24px;
   }
 
   .overlay .closebtn {
