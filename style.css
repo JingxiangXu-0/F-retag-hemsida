@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;1,300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
 
 * {
   box-sizing: border-box;
@@ -46,19 +47,23 @@ a {
 ul {
   list-style: none;
 }
-/* Allmänt style */
+
+/* reusable style */
 
 .btn {
-  position: absolute;
-  background-color: white;
-  text-align: center;
-  display: inline-block;
-  border-radius: 8px;
+  background-color: #3d3d3d;
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 3.5rem;
+  margin: 1rem auto;
+  border-radius: 10px;
   cursor: pointer;
   transition-duration: 0.4s;
   font-weight: bold;
   text-transform: uppercase;
   z-index: 2;
+  border: none;
 }
 
 .btn:hover {
@@ -111,36 +116,12 @@ ul {
   padding-left: 2%;
 }
 
-@media screen and (max-height: 600px) {
-  .headtext {
-    font-size: 1.8rem;
-    min-height: 1px;
-  }
-  body {
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
+.space {
+  padding-top: 8rem;
 }
 
-@media screen and (min-height: 786px) {
-  .text {
-    font-size: 32px;
-    min-height: 0.5px;
-    padding-left: 3%;
-    padding-right: 3%;
-  }
-
-  .miniheadtext {
-    font-size: 42px;
-    padding-left: 3%;
-    padding-right: 3%;
-  }
-  .headtext {
-    font-size: 3rem;
-    min-height: 2px;
-    padding-left: 3%;
-    padding-right: 3%;
-  }
+.space1 {
+  padding-top: 3rem;
 }
 
 .footerarea {
@@ -149,7 +130,7 @@ ul {
 /* Booking */
 
 .dots {
-  font-size: 2rem;
+  font-size: 1rem;
   margin-left: 0.2rem;
   opacity: 0.75;
 }
@@ -186,8 +167,126 @@ ul {
 }
 
 .btn-purple:hover {
-  background-color: blue;
+  opacity: 0.65;
 }
 .btn-purple {
   background-color: #3d3d3d;
+}
+
+/* Featured Hotels */
+
+.section-head {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.heading {
+  display: block;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.sub-heading {
+  font: 1rem;
+  font-family: "Courgette", cursive;
+  font-weight: 300;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
+.hotel-img {
+  width: 85%;
+}
+
+.hotel-name {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.hotel-price {
+  font-size: 18px;
+  font-family: "monospace";
+}
+
+.hotel-rating {
+  font-size: 24px;
+  margin: 1rem;
+  color: #ffd700;
+}
+
+.book-btn {
+  font-size: 20px;
+}
+
+.book-btn:hover {
+  opacity: 0.65;
+}
+
+/* Offer */
+
+.offer {
+  outline: 1.5px solid #bbbbbb;
+  outline-offset: 0.2rem;
+}
+
+.offer-content {
+  background-color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.discount {
+  background-color: #ffd700;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0.5rem;
+  text-transform: uppercase;
+  outline: 3px solid #ffd700;
+  outline-offset: 0.2rem;
+}
+
+/* Media Query */
+
+@media screen and (max-height: 600px) {
+  .headtext {
+    font-size: 1.8rem;
+    min-height: 1px;
+  }
+  body {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-height: 786px) {
+  .text {
+    font-size: 32px;
+    min-height: 0.5px;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  .miniheadtext {
+    font-size: 42px;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  .headtext {
+    font-size: 3rem;
+    min-height: 2px;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
 }

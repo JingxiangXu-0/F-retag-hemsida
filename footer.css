@@ -26,6 +26,10 @@ footer {
   position: relative;
 }
 
+.arrow {
+  margin: 0 1rem;
+}
+
 .left .content .social {
   margin: 30px 0 0 0;
 }
@@ -50,7 +54,7 @@ footer {
 }
 
 .left .content a :hover {
-  background-color: blue;
+  opacity: 0.65;
 }
 
 .right .content .fas {
@@ -66,7 +70,7 @@ footer {
 }
 
 .right .content .fas:hover {
-  background: blue;
+  opacity: 0.65;
 }
 
 .right .content .text {
