@@ -115,7 +115,6 @@ input,
   font-size: 17px;
   line-height: 20px;
   text-decoration: none;
-  color: white;
 }
 
 .login-button {
@@ -157,6 +156,11 @@ input[type="submit"]:hover {
   content: "";
   display: table;
   clear: both;
+}
+
+.terms {
+  font-size: 0.2em;
+  text-align: center;
 }
 
 .animate {

@@ -299,6 +299,19 @@ ul {
   padding-top: 20rem;
 }
 
+/* Contact form */
+
+input[type="text"],
+select,
+textarea {
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
 /* Media Query */
 
 @media screen and (max-height: 600px) {
@@ -309,6 +322,10 @@ ul {
   body {
     flex-wrap: wrap;
     flex-direction: column;
+  }
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
   }
 }
 

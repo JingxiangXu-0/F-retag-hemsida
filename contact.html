@@ -98,17 +98,12 @@
   </header>
 <!-- header_area_end -->
 
-
 <main>
 <!-- slider_area_start -->
   <section class="slideshow-area">
     <div class="slides">
       <div class="slideroverlay">
-        <h1 class="gigaheadtext" data-aos="zoom-up" data-aos-duration="2000" data-aos-delay="200">Laxaries Rooms</h1>
-        <p  class="subheadtext"  data-aos="zoom-up" data-aos-duration="4000" data-aos-delay="400" >Heavenly bed. Heavenly bath.</p>
-        <div class="btn landing-btn">
-          <a class="landingbutton" href="index.html">Book</a>
-        </div>
+        <h1 class="gigaheadtext" data-aos="zoom-up" data-aos-duration="2000" data-aos-delay="200">Get In Touch</h1>
       </div>
 
       <input type="radio" name="radio-btn" id="radio1">
@@ -117,16 +112,16 @@
       <input type="radio" name="radio-btn" id="radio4">
 
       <div class="slide first">
-        <img src="Bilder/Room-img2.jpg" alt="Slidershow bild 1" style="width:100%">
+        <img src="Bilder/travel-img2.jfif" alt="Slidershow bild 1" style="width:100%">
       </div>
       <div class="slide">
-        <img src="Bilder/Room-img3.jpg" alt="Slidershow bild 2" style="width:100%">
+        <img src="Bilder/travel-img1.jfif" alt="Slidershow bild 2" style="width:100%">
       </div>
       <div class="slide">
-        <img src="Bilder/Room-img1.jpg" alt="Slidershow bild 3" style="width:100%">
+        <img src="Bilder/travel-img4.jfif" alt="Slidershow bild 3" style="width:100%">
       </div>
       <div class="slide">
-        <img src="Bilder/Room-img4.jpg" alt="Slidershow bild 4" style="width:100%">
+        <img src="Bilder/travel-img3.jfif" alt="Slidershow bild 4" style="width:100%">
       </div>
 
       <div class="navigation-auto">
@@ -153,73 +148,45 @@
   </section>
 <!-- slider_area_end -->
 
+<!-- Contact start -->
 
-<!-- Hotels start-->
-<section class="hotel">
+<section class="contact">
   <div class="container">
-    <h4 class="section-head">
-      <span class="heading" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">Hotels</span>
-      <span class="sub-heading" data-aos="fade-down" data-aos-delay="300" data-aos-duration="1000">Our Beautiful hotels</span>
-    </h4>
-    <div class="grid">
+    <div class="maps">
+      <div id="googleMap" style="width:100%;height:500px;"></div>
+      <script>
+      function myMap() {
+      var mapProp= {
+        center:new google.maps.LatLng(45.355198, -110.727320),
+        zoom:5,
+      };
+      var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+      }
+      </script>
+     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvW2eiZOr0dQs9BuKYOVocOAKebxOv6m0&callback=myMap"></script>
+     <p class="space"></p>
+    </div>
 
-      <div class="grid-item featured-hotels">
-        <img src="/Bilder/Hotell-Bild2.jpg" alt="Hotel-img" class="hotel-img"  data-aos="flip-right" data-aos-duration="2500" data-aos-delay="200">   
-        <h5 class="hotel-name" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">El Presidente</h5>
-        <span class="hotel-price" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300"
-        data-aos-offset="0">From $940/Night</span>
-        <div class="hotel-rating">
-          <i class="fas fa-star rating"  data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="150"></i>
-          <i class="fas fa-star rating"  data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="250"></i>
-          <i class="fas fa-star rating"  data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="350"></i>
-          <i class="fas fa-star rating"  data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="450"></i>
-          <i class="fas fa-star rating"  data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="550"></i>
-        </div>
-        <button class="btn book-btn">
-          <a href="#" >Book now!</a>
-        </button>
-      </div>
-      
-      <div class="grid-item featured-hotels">
-        <img src="/Bilder/Hotell-Bild1.jpg" alt="Hotel-img" class="hotel-img"  data-aos="flip-right" data-aos-duration="2500" data-aos-delay="200">
-        <h5 class="hotel-name" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Irell</h5>
-        <span class="hotel-price" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300"
-        data-aos-offset="0">From $555/Night</span>
-        <div class="hotel-rating">
-          <i class="fas fa-star rating"  data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="150"></i>
-          <i class="fas fa-star rating"  data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="250"></i>
-          <i class="fas fa-star rating"  data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="350"></i>
-          <i class="fas fa-star rating"  data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="450"></i>
-          <i class="fas fa-star rating"  data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="550"></i>
-        </div>
-        <button class="btn book-btn">
-          <a href="#" >Book now!</a>
-        </button>
-      </div>
-      
-      <div class="grid-item featured-hotels">
-        <img src="/Bilder/Hotell-Bild3.jpg" alt="Hotel-img" class="hotel-img"  data-aos="flip-right" data-aos-duration="2500" data-aos-delay="200">
-        <h5 class="hotel-name" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">I did not hit her.</h5>
-        <span class="hotel-price" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300"
-        data-aos-offset="0">From $400/Night</span>
-        <div class="hotel-rating">
-          <i class="fas fa-star rating"  data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="150"></i>
-          <i class="fas fa-star rating"  data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="250"></i>
-          <i class="fas fa-star rating"  data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="350"></i>
-          <i class="fas fa-star rating"  data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="450"></i>
-          <i class="fas fa-star-half rating"  data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="550"></i>
-        </div>
-        <button class="btn book-btn">
-          <a href="#" >Book now!</a>
-        </button>
-      </div>
-      <div class="space"></div>
+    <div class="contact-form">
+      <form action="action_page.php">
+    
+        <label for="fname">Name</label>
+        <input type="text" id="fname" name="name" placeholder="Enter Your Name" required>
+    
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" placeholder="Enter Your Email" required> 
+    
+        <label for="message">Message</label>
+        <textarea name="message" id="message" placeholder="Enter Message" required style="width: 100%; height: 10rem;"></textarea>
+    
+        <input type="submit" value="Send">
+      </form>
+      <p class="space"></p>
     </div>
   </div>
 </section>
-<!-- Hotel end -->
 
-
+<!-- Contact end -->
 
  <!-- Footer-start -->
  <footer>
