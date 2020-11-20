@@ -242,44 +242,69 @@ a {
   outline-offset: 0.2rem;
 }
 
-/* Food */
+/* About */
+.mobile-space {
+  padding: 0;
+}
+
+.about-main-content,
+.food-main-content {
+  display: flex;
+}
+
+.left-box1 {
+  min-width: 50%;
+}
+
+.left-box1 .about-header {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.left-box1 .about-p {
+  font-family: monospace;
+  font-size: 1rem;
+  justify-self: start;
+}
+
+.right-box1 .about-img1 {
+  width: 38%;
+  padding-left: 2rem;
+  padding-top: 2rem;
+}
+
+.right-box1 .about-img2 {
+  width: 38%;
+}
+
+/* Food*/
 
 .left-box .food-img2 {
-  width: 30%;
-  padding-left: 1rem;
+  width: 48%;
+  padding-top: 2rem;
 }
 
 .left-box .food-img1 {
-  width: 28%;
-  padding-bottom: 1.5rem;
+  width: 45%;
+  padding-bottom: 5rem;
 }
 
-.right-box {
-  flex-wrap: wrap;
-  flex-direction: column;
-}
-
-.right-box .food-span {
-  color: rgb(40, 40, 255);
-  position: absolute;
-  left: 50%;
+.left-box {
+  flex-basis: 55%;
 }
 
 .right-box .food-header {
   position: absolute;
-  left: 50%;
   font-size: 1.8rem;
+  text-align: center;
 }
 
 .right-box .food-p {
+  font-family: monospace;
   position: absolute;
-  left: 50%;
-  padding-top: 10rem;
+  padding: 11rem 0;
   font-size: 1rem;
-}
-
-.right-box .learn-btn {
-  padding-top: 20rem;
+  justify-self: start;
 }
 
 /* Contact form */
@@ -331,5 +356,37 @@ textarea {
     min-height: 2px;
     padding-left: 3%;
     padding-right: 3%;
+  }
+}
+
+@media screen and (max-width: 724px) {
+  .food-main-content,
+  .about-main-content {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .space-around {
+    display: none;
+  }
+  .mobile-space {
+    padding: 10rem 0;
+  }
+
+  .space {
+    padding: 10rem 0;
+  }
+
+  .left-box .food-img2,
+  .left-box .food-img1,
+  .right-box1 .about-img2,
+  .right-box1 .about-img1 {
+    width: 100%;
+    max-width: 100vw;
+    padding: 2px;
+  }
+
+  .food-p {
+    padding-bottom: 13rem;
   }
 }
