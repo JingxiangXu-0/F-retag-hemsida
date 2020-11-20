@@ -173,11 +173,11 @@
   background-color: white;
   color: black;
   font-size: 24px;
+  opacity: 0.6;
 }
 
 .landing-btn:hover {
-  background-color: white;
-  opacity: 0.75;
+  opacity: 1;
 }
 
 @media only screen and (max-width: 600px) {

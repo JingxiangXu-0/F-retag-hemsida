@@ -64,10 +64,11 @@ ul {
   text-transform: uppercase;
   z-index: 2;
   border: none;
+  opacity: 0.75;
 }
 
 .btn:hover {
-  opacity: 0.65;
+  opacity: 1;
 }
 
 .container {
@@ -78,7 +79,7 @@ ul {
 }
 
 .miniheadtext {
-  color: blue;
+  color: rgb(40, 40, 255);
   font-size: 1rem;
   line-height: 1.5;
   position: relative;
@@ -167,8 +168,9 @@ ul {
 }
 
 .btn-purple:hover {
-  opacity: 0.65;
+  opacity: 0.75;
 }
+
 .btn-purple {
   background-color: #3d3d3d;
 }
@@ -225,10 +227,11 @@ ul {
 
 .book-btn {
   font-size: 20px;
+  opacity: 0.75;
 }
 
 .book-btn:hover {
-  opacity: 0.65;
+  opacity: 1;
 }
 
 /* Offer */
@@ -254,6 +257,46 @@ ul {
   text-transform: uppercase;
   outline: 3px solid #ffd700;
   outline-offset: 0.2rem;
+}
+
+/* Food */
+
+.left-box .food-img2 {
+  width: 30%;
+  padding-left: 1rem;
+}
+
+.left-box .food-img1 {
+  width: 28%;
+  padding-bottom: 1.5rem;
+}
+
+.right-box {
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.right-box .food-span {
+  color: rgb(40, 40, 255);
+  position: absolute;
+  left: 50%;
+}
+
+.right-box .food-header {
+  position: absolute;
+  left: 50%;
+  font-size: 1.8rem;
+}
+
+.right-box .food-p {
+  position: absolute;
+  left: 50%;
+  padding-top: 10rem;
+  font-size: 1rem;
+}
+
+.right-box .learn-btn {
+  padding-top: 20rem;
 }
 
 /* Media Query */
