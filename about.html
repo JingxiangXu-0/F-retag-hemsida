@@ -41,9 +41,6 @@
               <a href="room.html">Rooms</a>
             </li>
             <li class="nav-item">
-              <a href="gallery.html">Gallery</a>
-            </li>
-            <li class="nav-item">
               <a href="about.html">About</a>
             </li>
             <li class="nav-item">
@@ -154,7 +151,7 @@
 <section class="slideshow-area">
   <div class="slides">
     <div class="slideroverlay">
-      <h1 class="gigaheadtext" data-aos="zoom-up" data-aos-duration="2000" data-aos-delay="200">About Montana Resort</h1>
+      <h1 class="gigaheadtext" data-aos="zoom-up" data-aos-duration="2000" data-aos-delay="200">About Montana</h1>
       <div class="btn landing-btn" onclick="document.getElementById('id02').style.display='block'">
         <a class="landingbutton">Book</a>
       </div>
@@ -205,6 +202,9 @@
 <!-- about start -->
 <section class="about">
   <div class="container">
+    <h1 id="faq1" class="headtext">FAQ About Lorem
+      <p class="space1"></p>
+    </h1>
     <div class="about-main-content">
       <div class="left-box1">
         <h5 class="about-header">We Serve Fresh and Delicious Food and Drinks</h5>
@@ -223,12 +223,14 @@
 </div>
 <div class="mobile-space"></div>
 </section>
-
 <!-- about end -->
 
 <!-- Food start -->
 <section class="food">
   <div class="container">
+    <h1 id="faq2" class="headtext">FAQ About Food
+      <p class="space1"></p>
+    </h1>
     <div class="food-main-content">
       <div class="left-box">
         <img src="Bilder/Food-bild3.jpg" alt="Pictures on food" class="food-img1 food-img">
@@ -240,10 +242,72 @@
       </div>
     </div>
   </div>
-  <div class="space"></div>
+  <div class="space-around">
+    <p class="space"></p>
+    <div class="big-picture"><img src="Bilder/big-img2.jpg" alt="big-img" style="width: 100%;" height="100%"></div>
+    <p class="space1"></p>
+  </div>
+  <div class="mobile-space"></div>
 </section>
-
 <!-- Food ends -->
+
+
+<!-- Timetabel start-->
+<div class="space"></div>
+<section class="openinghours">
+  <div class="openinghourscontent section">
+      <div class="header">
+           <h2>Opening Hours</h2>
+<span id="open-status"><small class="openorclosed">We are</small></span>
+
+      </div>
+      <table class="opening-hours-table">
+          <tr id="Monday" itemprop="openingHours">
+              <td>Monday</td>
+              <td class="opens">06:00</td>
+              <td>-</td>
+              <td class="closes">23:00</td>
+          </tr>
+          <tr id="Tuesday" itemprop="openingHours">
+            <td>Tuesday</td>
+            <td class="opens">06:00</td>
+            <td>-</td>
+            <td class="closes">23:00</td>
+        </tr>
+        <tr id="Wednsday" itemprop="openingHours">
+          <td>Wednsday</td>
+          <td class="opens">06:00</td>
+          <td>-</td>
+          <td class="closes">23:00</td>
+        </tr>
+        <tr id="Thursday" itemprop="openingHours">
+          <td>Thursday</td>
+          <td class="opens">06:00</td>
+          <td>-</td>
+          <td class="closes">23:00</td>
+      </tr>
+          <tr id="Friday" itemprop="openingHours">
+              <td>Friday</td>
+              <td class="opens">06:00</td>
+              <td>-</td>
+              <td class="closes">23:00</td>
+          </tr>
+          <tr id="Saturday" itemprop="openingHours">
+              <td>Saturday</td>
+              <td class="opens">01:00</td>
+              <td>-</td>
+              <td class="closes">23:00</td>
+          </tr>
+          <tr id="Sunday" itemprop="openingHours">
+              <td>Sunday</td>
+              <td class="opens">01.00</td>
+              <td>-</td>
+              <td class="closes">23.00</td>
+          </tr>
+      </table>
+  </div>
+</section>
+<!-- Timetabel end-->
 
  <!-- Footer-start -->
  <footer>
@@ -254,7 +318,6 @@
   <ul class="navigation">
     <a href="index.html" class="nav-link">Home</a>
     <a href="room.html" class="nav-link">Rooms</a>
-    <a href="gallery.html" class="nav-link">Gallery</a>
     <a href="about.html" class="nav-link">About</a>
     <a href="contact.html" class="nav-link">Contact</a>
   </ul>
@@ -300,9 +363,9 @@
 <script src="sliderscript.js"></script>
 <script src="aos.js"></script>
 <script src="menu.js"></script>
-<script src="stickyheader.js"></script>
 <script src="login.js"></script>
 <script src="book.js"></script>
+<script src="timetabel.js"></script>
 <script>
  AOS.init();
 </script>

@@ -50,17 +50,35 @@ header img {
 
 .overlay .closebtn {
   position: absolute;
-  top: 0;
+  top: 1.2rem;
   right: 1em;
-  font-size: 2.5rem;
+  font-size: 30px;
 }
 
 .openbtn {
   color: white;
   position: absolute;
-  top: 1em;
+  top: 1.2rem;
   right: 1em;
   z-index: 2;
+}
+
+.dropdown-content {
+  display: none;
+  background-color: black;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 /* Login */
@@ -81,10 +99,10 @@ header img {
 .login .fas {
   color: white;
   position: absolute;
-  width: 45px;
-  height: 45px;
-  top: 22px;
+  width: 30px;
+  height: 30px;
   right: 3em;
+  top: 1.2rem;
   z-index: 2;
   font-size: 1.3rem;
 }
@@ -107,7 +125,7 @@ header img {
 input,
 .login-button {
   width: 100%;
-  padding: 12px;
+  padding: 14px;
   border: none;
   border-radius: 4px;
   margin: 5px 0;
@@ -202,16 +220,9 @@ input[type="submit"]:hover {
     margin-top: 1em;
   }
 
-  .overlay a {
+  .overlay .nav-item {
     font-size: 28px;
-    padding-top: 14px;
-  }
-
-  .openbtn {
-    top: 5%;
-  }
-  .overlay .closebtn {
-    top: 1%;
+    padding-top: 42px;
   }
 }
 
@@ -226,32 +237,21 @@ input[type="submit"]:hover {
     top: 10%;
     width: 100%;
   }
-  .overlay a {
+  .overlay .nav-item {
     font-size: 44px;
-    padding-top: 14px;
+    padding-top: 48px;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  /* header img {
-    padding-left: 15px;
-    padding-top: 0.6em;
-    top: 2%;
-  } */
-
   .overlay-content {
     top: 10%;
     margin-top: 1em;
   }
 
-  .overlay-content a {
-    padding-top: 12px;
+  .overlay-content .nav-item {
+    font-size: 52px;
   }
-
-  /* .overlay .closebtn {
-    top: 0.5;
-    right: 2%;
-  } */
 }
 @media only screen and (min-width: 992px) {
   /* header img {
@@ -263,8 +263,8 @@ input[type="submit"]:hover {
     margin-top: 1em;
   }
 
-  .overlay-content a {
-    padding-top: 24px;
+  .overlay-content .nav-item {
+    padding-top: 48px;
   }
 
   /* .overlay .closebtn {
