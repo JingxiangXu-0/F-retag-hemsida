@@ -62,18 +62,12 @@ a {
   margin: 0 auto;
 }
 
-.miniheadtext {
-  color: rgb(40, 40, 255);
-  font-size: 1rem;
-  line-height: 1.5;
-  position: relative;
-  width: 100%;
-  min-height: 1px;
-  padding-right: 2%;
-  padding-left: 2%;
+.subheadtext {
+  text-align: center;
+  color: white;
 }
 
-.subheadtext {
+.gigaheadtext {
   text-align: center;
   color: white;
 }
@@ -225,6 +219,10 @@ a {
 /* About */
 .mobile-space {
   padding: 0;
+}
+
+.computer-space {
+  padding: 3rem 0;
 }
 
 .about-main-content,
@@ -399,6 +397,9 @@ textarea {
   }
   .mobile-space {
     padding: 10rem 0;
+  }
+  .computer-space {
+    padding: 2rem 0;
   }
 
   .space {
