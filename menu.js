@@ -4,8 +4,3 @@ function openNav() {
 function closeNav() {
   document.getElementById("myNav").style.width = "0%";
 }
-window.onclick = function(event) {
-  if (event.target == nav-item) {
-    modal.style.display = "none";
-  }
-}

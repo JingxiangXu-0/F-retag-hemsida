@@ -26,11 +26,8 @@ footer {
   position: relative;
 }
 
-.left .content .social {
-  margin: 30px 0 0 0;
-}
-.left .content .copyright {
-  margin: 30px 0 0 0;
+ul {
+  padding-inline-start: 0px;
 }
 
 .left .content a {
@@ -80,12 +77,16 @@ footer {
 .right .content .text {
   font-size: 1rem;
   font-weight: 500;
-  padding-left: 10px;
   color: #d9d9d9;
 }
 
 .right .content .phone {
   margin: 15px 0;
+}
+
+.footer-nav {
+  display: inline-block;
+  vertical-align: top;
 }
 
 @media screen and (max-width: 900px) {

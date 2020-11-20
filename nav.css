@@ -89,10 +89,11 @@ header img {
   font-size: 1.3rem;
 }
 
-.modal {
+.modal,
+.modal1 {
   display: none;
   position: fixed;
-  z-index: 1000;
+  z-index: 10000;
   left: 0;
   top: 0;
   width: 100%;
@@ -100,7 +101,7 @@ header img {
   overflow: auto;
   background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.6);
-  padding-top: 60px;
+  padding-top: 2rem;
 }
 
 input,
@@ -120,6 +121,7 @@ input,
 .login-button {
   background-color: #3d3d3d;
   text-align: center;
+  color: #ffffff;
 }
 
 input:hover,
@@ -145,11 +147,12 @@ input[type="submit"]:hover {
   padding: 0 50px;
 }
 
-.login-container {
+.login-container,
+.book-container {
   position: relative;
-  border-radius: 5px;
+  border-radius: 10px;
   background-color: #f2f2f2;
-  padding: 20px 0 30px 0;
+  padding: 1rem;
 }
 
 .row:after {

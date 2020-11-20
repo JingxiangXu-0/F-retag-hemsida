@@ -38,16 +38,13 @@
               <a href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a href="#">Book</a>
-            </li>
-            <li class="nav-item">
               <a href="room.html">Rooms</a>
             </li>
             <li class="nav-item">
               <a href="gallery.html">Gallery</a>
             </li>
             <li class="nav-item">
-              <a href="#">About</a>
+              <a href="about.html">About</a>
             </li>
             <li class="nav-item">
               <a href="contact.html">Contact</a>
@@ -64,13 +61,10 @@
           <span onclick="document.getElementById('id01').style.display='none'"
         class="close" title="Close Modal">&times;</span>
         
-         <form class="modal-content animate" action="/action_page.php">
+         <div class="modal-content animate">
 
           <div class="login-container">
-              <div class="row">
-                <h2 style="text-align:center">Login</h2>
-                </div>
-          
+            <h2 style="text-align:center">Login</h2>
                 <div class="col">
                   <div class="hide-md-lg">
                   </div>
@@ -88,12 +82,70 @@
                     </div>
                   </div>
                 </div>
-              </form>
+              </div>
             </div>
           </div>
-        </div>
 
-    </div>
+
+          <div class="book">
+            <div id="id02" class="modal1">
+              <span onclick="document.getElementById('id02').style.display='none'"
+            class="close" title="Close Modal">&times;</span>
+             <div class="modal-content animate">
+              <div class="book-container">          
+                      <div class="hide-md-lg"></div>
+
+                      <form action="" class="form">
+                        <div class="input-group">
+                          <label for="check-in" class="input-label">Check-in</label>
+                          <input type="date" class="intut" id="check-in">
+                        </div>
+
+                        <div class="input-group">
+                          <label for="check-out" class="input-label">Check-out</label>
+                          <input type="date" class="intut" id="check-out">
+                        </div>
+
+                        <div class="input-group">
+                          <select name="" id="adults" class="options">
+                          <option value="0">Adults</option>
+                          <option value="0">0</option>
+                          <option value="0">1</option>
+                          <option value="0">2</option>
+                          <option value="0">3</option>
+                          <option value="0">4</option>
+                        </select>
+                        </div>
+
+                        <div class="input-group">
+                          <select name="" id="children" class="options">
+                          <option value="0">Children</option>
+                          <option value="0">0</option>
+                          <option value="0">1</option>
+                          <option value="0">2</option>
+                          <option value="0">3</option>
+                          <option value="0">4</option>
+                        </select>
+                        </div>
+
+                        <div class="input-group">
+                          <select name="" id="room" class="options">
+                          <option value="0">Room Type</option>
+                          <option value="0">El Presidente</option>
+                          <option value="0">Irell</option>
+                          <option value="0">I did not hit her.</option>
+                        </select>
+                        </div>
+
+                    <button class="login-button">Check Availability</button>
+                      </form>
+                    </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+      </div>
     </div>
   </header>
 <!-- header_area_end -->
@@ -106,8 +158,8 @@
       <div class="slideroverlay">
         <h1 class="gigaheadtext" data-aos="zoom-up" data-aos-duration="2000" data-aos-delay="200">Laxaries Rooms</h1>
         <p  class="subheadtext"  data-aos="zoom-up" data-aos-duration="4000" data-aos-delay="400" >Heavenly bed. Heavenly bath.</p>
-        <div class="btn landing-btn">
-          <a class="landingbutton" href="index.html">Book</a>
+        <div class="btn landing-btn" onclick="document.getElementById('id02').style.display='block'">
+          <a class="landingbutton">Book</a>
         </div>
       </div>
 
@@ -175,8 +227,8 @@
           <i class="fas fa-star rating"  data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="450"></i>
           <i class="fas fa-star rating"  data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="550"></i>
         </div>
-        <button class="btn book-btn">
-          <a href="#" >Book now!</a>
+        <button class="btn book-btn" onclick="document.getElementById('id02').style.display='block'">
+          <a >Book now!</a>
         </button>
       </div>
       
@@ -192,8 +244,8 @@
           <i class="fas fa-star rating"  data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="450"></i>
           <i class="fas fa-star rating"  data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="550"></i>
         </div>
-        <button class="btn book-btn">
-          <a href="#" >Book now!</a>
+        <button class="btn book-btn" onclick="document.getElementById('id02').style.display='block'">
+          <a>Book now!</a>
         </button>
       </div>
       
@@ -209,8 +261,8 @@
           <i class="fas fa-star rating"  data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="450"></i>
           <i class="fas fa-star-half rating"  data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="550"></i>
         </div>
-        <button class="btn book-btn">
-          <a href="#" >Book now!</a>
+        <button class="btn book-btn" onclick="document.getElementById('id02').style.display='block'">
+          <a >Book now!</a>
         </button>
       </div>
       <div class="space"></div>
@@ -225,27 +277,27 @@
  <footer>
   <div class="main-content">
     <div class="left box">
-      <h2 > Navigation</h2>
+      <h2>Navigation</h2>
 <div class="content">
-  <div class="navigation">
+  <ul class="navigation">
     <a href="index.html" class="nav-link">Home</a>
-    <a href="#" class="nav-link">Book</a>
     <a href="room.html" class="nav-link">Rooms</a>
     <a href="gallery.html" class="nav-link">Gallery</a>
-    <a href="#" class="nav-link">About</a>
+    <a href="about.html" class="nav-link">About</a>
     <a href="contact.html" class="nav-link">Contact</a>
-  </div>
+  </ul>
 
-<div class="social">
+   <div class="social">
+      <ul class="social-link">
           <a href="https://facebook.com/"><span class="fab fa-facebook-f"></span></a>
           <a href="https://twitter.com/"><span class="fab fa-twitter"></span></a>
           <a href="https://instagram.com/"><span class="fab fa-instagram"></span></a>
           <span class="fas fa-user" onclick="document.getElementById('id01').style.display='block'"></span>
           <a href="#"><span class="fas fa-arrow-up arrow"></span></a>
-        </div>
+       </ul>
+      </div>
         <div class="copyright">
-          <p class="far fa-copyright" 
-          data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">2020 All rights reserved.</p> </div>
+          <p class="far fa-copyright">2020 All rights reserved.</p> </div>
 </div>
 </div>
 
