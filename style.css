@@ -231,11 +231,12 @@ a {
 }
 
 .left-box1 {
-  min-width: 50%;
+  min-width: 45%;
 }
 
 .left-box1 .about-header {
   font-size: 1.8rem;
+  text-align: center;
 }
 
 .left-box1 .about-p {
@@ -245,26 +246,30 @@ a {
 }
 
 .right-box1 .about-img1 {
-  width: 50%;
-  padding-left: 2rem;
-  padding-top: 2rem;
-  align-self: flex-start;
+  width: 48%;
+  margin-top: 4rem;
+  margin-left: 1rem;
 }
 
 .right-box1 .about-img2 {
   width: 48%;
+  margin-bottom: 4rem;
+}
+
+.right-box {
+  display: inline-flex;
 }
 
 /* Food*/
 
 .left-box .food-img2 {
-  width: 48%;
-  padding-top: 2rem;
+  width: 45%;
+  margin-top: 2rem;
 }
 
 .left-box .food-img1 {
   width: 45%;
-  padding-bottom: 5rem;
+  margin-bottom: 3rem;
 }
 
 .left-box {
@@ -280,7 +285,7 @@ a {
 .right-box .food-p {
   font-family: monospace;
   position: absolute;
-  padding: 11rem 0;
+  margin: 11rem 0;
   font-size: 1rem;
   justify-self: start;
 }
